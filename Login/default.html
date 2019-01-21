@@ -8,31 +8,31 @@
     <script src="Login_Page.js"></script>
 </head>
 <body>
+    <form enctype="application/x-www-form-urlencoded" action="Home/Login">
+        <fieldset style="font-size: medium; width: 356px;">
+            <legend style="background-color: #99CCFF; font-size:larger">User Login</legend>
+            <br />
+            <b>UserName</b>
+            <input id="UserEmail" type="email" placeholder="Email:" name="UserEmail" /><br />
 
-    <fieldset style="font-size: medium; width: 356px;">
-        <legend style="background-color: #99CCFF; font-size:larger">User Login</legend>
-        <br />
-        <b>UserName</b>
-        <input id="UserName" type="text" value="default" /><br />
-
-        <select id="SelectUserName">
-            <option selected="selected" value="default">Select an username</option>
-            <option value="DefaultUser">DefaultUser</option>
-            <option value="FirstUser">FirstUser</option>
-            <option value="SecondUser">SecondUser</option>
-        </select>
-        <br />
-        <b>Password</b>
-        <input id="Password" type="password" /><br />
-        <select id="SelectPassword">
-            <option selected="selected" value="default">Select a password</option>
-            <option value="DefaultPasword">DefaultPasword</option>
-            <option value="FirstUserPassword">FirstUserPassword</option>
-            <option value="SecondUserPassword">SecondUserPassword</option>
-        </select>
-        <br />
-        
-        <input id="login" type="button" value="Login" />
-    </fieldset>
+            <select id="SelectUserEmail" onchange="EmailOptionChanged()">
+                <option selected="selected" value="default">Select an user email</option>
+                <option value="FirstUser@gmail.com">First user</option>
+                <option value="SecondUser@mail.ru">Second user</option>
+                <option value="ThirdUser@bigmir.net">Third user</option>
+            </select>
+            <br />
+            <b>Password</b>
+            <input id="UserPassword" type="password" placeholder="Password:" name="UserPassword" /><br />
+            <select id="SelectPassword" onchange="PasswordOptionChanged()">
+                <option selected="selected" value="default">Select a password</option>
+                <option value="Password1@">First user pasword</option>
+                <option value="Password2@">Second user pasword</option>
+                <option value="Password3@">Third user pasword</option>
+            </select>
+            <br />
+            <input type="submit" value="login" />
+        </fieldset>
+    </form>
 </body>
 </html>
