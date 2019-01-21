@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript Login Test App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Login_Page.js"></script>
+</head>
+<body>
+
+    <fieldset style="font-size: medium; width: 356px;">
+        <legend style="background-color: #99CCFF; font-size:larger">User Login</legend>
+        <br />
+        <b>UserName</b>
+        <input id="UserName" type="text" value="default" /><br />
+
+        <select id="SelectUserName">
+            <option selected="selected" value="default">Select an username</option>
+            <option value="DefaultUser">DefaultUser</option>
+            <option value="FirstUser">FirstUser</option>
+            <option value="SecondUser">SecondUser</option>
+        </select>
+        <br />
+        <b>Password</b>
+        <input id="Password" type="password" /><br />
+        <select id="SelectPassword">
+            <option selected="selected" value="default">Select a password</option>
+            <option value="DefaultPasword">DefaultPasword</option>
+            <option value="FirstUserPassword">FirstUserPassword</option>
+            <option value="SecondUserPassword">SecondUserPassword</option>
+        </select>
+        <br />
+        
+        <input id="login" type="button" value="Login" />
+    </fieldset>
+</body>
+</html>
